@@ -1,0 +1,31 @@
+/*
+Constant "age"
+*/
+const age = 24;
+
+/*
+Gunakan operator perbandingan untuk mencetakkan hasilnya.
+Cetak hasil "age >= 18"
+*/
+// Cetak hasil dari age >= 18
+console.log(age >= 18);
+
+/*
+Cetak hasil "age < 18"
+*/
+// Cetak hasil dari age < 18
+console.log(age < 18);
+
+/*
+gunakan operator perbandingan di statement if
+Buat statement if dimana nilai "age" lebih besar atau sama dengan 18.
+*/
+//  Ketika nilai dari age lebih besar atau sama dengan 18
+// dan cetak "Saya berusia lebih dari 18 tahun" 
+if (age >= 18) {
+  /*
+  Di statement if, 
+  gunakan console.log untuk mencetak "Saya berusia lebih dari 18 tahun"
+  */
+  console.log("Saya berusia lebih dari 18 tahun");
+}

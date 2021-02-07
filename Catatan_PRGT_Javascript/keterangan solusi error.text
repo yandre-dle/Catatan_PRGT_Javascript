@@ -1,0 +1,43 @@
+solusi error 
+
+1>
+yandre-dle@yandredle-ThinkPad-T540p:~/Documents/Javascript/JS5/Memisahkan File/Bab 2 - Memisahkan File(2)/src$ node script.js 
+(node:6002) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+/home/yandre-dle/Documents/Javascript/JS5/Memisahkan File/Bab 2 - Memisahkan File(2)/src/script.js:2
+import Dog from "./dog";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (node:internal/modules/cjs/loader:1024:16)
+    at Module._compile (node:internal/modules/cjs/loader:1072:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+    at node:internal/main/run_main_module:17:47
+yandre-dle@yandredle-ThinkPad-T540p:~/Documents/Javascript/JS5/Memisahkan File/Bab 2 - Memisahkan File(2)/src$ 
+
+
+solusi
+1>
+https://github.com/standard-things/esm#readme
+
+
+2>
+ke directory
+yandre-dle@yandredle-ThinkPad-T540p:~/Documents/Javascript/JS5/Memisahkan File/Bab 2 - Memisahkan File(2)/src$ dir
+animal.js  dog.js  main.js  package.json  package-lock.json  script.js  scripts.js
+yandre-dle@yandredle-ThinkPad-T540p:~/Documents/Javascript/JS5/Memisahkan File/Bab 2 - Memisahkan File(2)/src$ 
+
+3>
+npm init esm
+
+yandre-dle@yandredle-ThinkPad-T540p:~/Documents/Javascript/JS5/Memisahkan File/Bab 2 - Memisahkan File(2)/src$ dir
+animal.js  dog.js  main.js  node_modules  package.json  package-lock.json  script.js  scripts.js
+yandre-dle@yandredle-ThinkPad-T540p:~/Documents/Javascript/JS5/Memisahkan File/Bab 2 - Memisahkan File(2)/src$ 
+
+
+4> run 
+node -r esm script.js
+
