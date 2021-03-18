@@ -1,0 +1,17 @@
+install javascript
+
+# sumber github
+install nodejs
+https://github.com/nodesource/distributions  
+
+# Using Ubuntu
+curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# check version
+ npm version
+
+# cara menjalankan file javascript
+node namafile
+node latihan1.js
+
